@@ -1,0 +1,124 @@
+{
+    "energy_consumption": [
+        {
+            "id": 11,
+            "user_id": 1,
+            "date": "2024-12-01 08:00:00",
+            "consumed_quantity": 120.5
+        },
+        {
+            "id": 12,
+            "user_id": 1,
+            "date": "2024-12-01 18:00:00",
+            "consumed_quantity": 95.7
+        },
+        {
+            "id": 13,
+            "user_id": 2,
+            "date": "2024-12-01 09:30:00",
+            "consumed_quantity": 200
+        },
+        {
+            "id": 14,
+            "user_id": 3,
+            "date": "2024-12-02 10:15:00",
+            "consumed_quantity": 150.25
+        },
+        {
+            "id": 15,
+            "user_id": 2,
+            "date": "2024-12-02 15:45:00",
+            "consumed_quantity": 180
+        }
+    ],
+    "energy_consumption_type": [],
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "password": "password123"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane.smith@example.com",
+            "password": "password456"
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "email": "bob.johnson@example.com",
+            "password": "password789"
+        }
+    ],
+    "waste_tracking": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "date": "2024-12-01 10:00:00",
+            "quantity": 5.5
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "date": "2024-12-01 11:00:00",
+            "quantity": 3.2
+        },
+        {
+            "id": 3,
+            "user_id": 3,
+            "date": "2024-12-02 09:00:00",
+            "quantity": 7.1
+        },
+        {
+            "id": 4,
+            "user_id": 1,
+            "date": "2024-12-02 14:00:00",
+            "quantity": 8.3
+        },
+        {
+            "id": 5,
+            "user_id": 2,
+            "date": "2024-12-02 17:00:00",
+            "quantity": 4
+        }
+    ],
+    "waste_type": [
+        {
+            "id": 11,
+            "waste_tracking_id": 1,
+            "user_id": 1,
+            "unit": "Papír",
+            "recycled": 1
+        },
+        {
+            "id": 12,
+            "waste_tracking_id": 2,
+            "user_id": 2,
+            "unit": "Műanyag",
+            "recycled": 1
+        },
+        {
+            "id": 13,
+            "waste_tracking_id": 3,
+            "user_id": 3,
+            "unit": "Üveg",
+            "recycled": 1
+        },
+        {
+            "id": 14,
+            "waste_tracking_id": 4,
+            "user_id": 1,
+            "unit": "Fém",
+            "recycled": 0
+        },
+        {
+            "id": 15,
+            "waste_tracking_id": 5,
+            "user_id": 2,
+            "unit": "Szerves hulladék",
+            "recycled": 1
+        }
+    ]
+}
