@@ -39,9 +39,7 @@
             <div class="card">
                 <h3>Használj energiatakarékos eszközöket</h3>
                 <p>
-                    Használj újrahasználható táskákat, palackokat és ételtároló edényeket.
-                    Kerüld a műanyag csomagolást és válassz papírból vagy üvegből készült termékeket.
-                    Válassz környezetbarát alternatívákat, például bambusz szívószálat, fából készült evőeszközöket.
+                Cseréld le a hagyományos villanykörtéket LED izzókra, amelyek kevesebb energiát fogyasztanak és hosszabb élettartamúak. Válassz A++ energiaosztályú háztartási gépeket, például mosógépet és hűtőt. Használj okos termosztátot, amely automatikusan szabályozza a hőmérsékletet, és keress olyan eszközöket, amelyek napenergiával működnek. Kisebb fogyasztás, nagyobb megtakarítás!
                 </p>
                 <img src="imgs/pittogram/2.png" alt="Energy saving image">
             </div>
@@ -50,9 +48,9 @@
             <div class="card">
                 <h3>Takarékoskodj vízzel</h3>
                 <p>
-                    Rövidítsd le a zuhanyzást, és ne hagyd folyni a vizet a csap alatt, amíg nem használod.
+                    Rövidítsd le a zuhanyzást, és ne hagyd folyni a csapvízet, amíg nem használod.
                     Használj víztakarékos eszközöket, mint például alacsony vízfogyasztású WC-k és zuhanyfejek.
-                    Gyűjtsd a csapvíz a növények öntözésére, ha nem tartalmaz vegyszereket.
+                    Gyűjtsd a csapvíz a növények öntözésére.
                 </p>
                 <img src="imgs/pittogram/3.png" alt="Water saving image">
             </div>
@@ -103,7 +101,7 @@
                 <h3>Tartsd karban a gépeket és eszközöket</h3>
                 <p>
                     Szervizeld rendszeresen a gépeket, hogy azok hatékonyabban működjenek és hosszabb ideig szolgáljanak.
-                    Ne dobj ki működőképes dolgokat, hanem javítsd meg őket, ha lehetséges.
+                    Ne dobj ki semmit, hanem javítsd meg őket, ha lehetséges.
                 </p>
                 <img src="imgs/pittogram/8.png" alt="Maintenance image">
             </div>
@@ -113,7 +111,7 @@
                 <h3>Zöldítsd a környezeted</h3>
                 <p>
                     Ültess fákat és növényeket otthon, mert ezek segítenek a szén-dioxid felszívásában és tisztítják a levegőt.
-                    Ha van kerted, építs szemetes kertet, ahol a zöld hulladékot újrahasznosíthatod.
+                    Ha van kerted, építs komposztálót, ahol a zöld hulladékot újrahasznosíthatod.
                 </p>
                 <img src="imgs/pittogram/9.png" alt="Greening the environment image">
             </div>
