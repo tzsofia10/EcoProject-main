@@ -2,11 +2,6 @@
     // Kezdjük a session-t
     session_start();
     
-    // Ha nincs bejelentkezve a felhasználó, irányítsuk a bejelentkezési oldalra
-    if (!isset($_SESSION['username'])) {
-        header("Location: ../bejelentkezes/bejelentkezes.php");
-        exit();
-    }
 
     // Hibák tömbjének inicializálása
     $hibak = [];

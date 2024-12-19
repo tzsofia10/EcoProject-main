@@ -6,7 +6,7 @@ const pointsContainer = document.getElementById("pointsContainer");
 const player = { x: 50, y: 350, width: 30, height: 30, color: "red", speed: 5, dx: 0, dy: 0 };
 let score = 0;
 const pointImagesPath = "./images"; // Képek mappája
-const pointImages = ["point1.jpg", "point2.jpg", "point3.png"]; // Képnevek
+const pointImages = ["point1.png", "point2.png", "point3.png"]; // Képnevek
 
 // Pontok létrehozása
 function generatePoints(count) {
