@@ -1,8 +1,8 @@
 <?php
 session_start();
-session_unset(); // Minden session változó törlése
-session_destroy(); // A session lezárása
+session_unset(); 
+session_destroy();
 
-header("Location: ../home.php");
+header("Location: ../index.php");
 exit();
 ?>

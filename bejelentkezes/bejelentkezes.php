@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+
     $sql = "SELECT * FROM users WHERE name = ?";
     $stmt = $conn->prepare($sql);
 
@@ -31,10 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $user = $result->fetch_assoc();
 
         if (password_verify($password, $user['password'])) {
-            $_SESSION['username'] = $user['name']; // Sessionben tárolt változó
-
-            // Átirányítás az index.php oldalra
-            header("Location: ../home.php");
+            $_SESSION['username'] = $user['name']; 
+            $_SESSION['id'] = $user['id'];
+            
+            header("Location: ../index.php");
             exit();
         } else {
             $errMsg = "Hibás jelszó!";

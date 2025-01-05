@@ -1,9 +1,13 @@
 <?php 
-    // Kezdjük a session-t
     session_start();
-    
 
-    // Hibák tömbjének inicializálása
+    if (isset($_SESSION['id'])) {
+        $user_id = $_SESSION['id'];
+        echo "user: " . $user_id;
+    } else {
+        die("Hiba: Nincs bejelentkezett felhasználó!");
+    }
+
     $hibak = [];
 
     // Ellenőrizzük, hogy a formot beküldték
@@ -13,9 +17,7 @@
         $consumed_quantity = floatval($_POST['consumed_quantity']);
         $consumption_type = htmlspecialchars(strip_tags($_POST['consumption_type']));
         $waste_type = htmlspecialchars(strip_tags($_POST['waste_type']));
-        $user_id = 1; // Mivel nem volt meghatározva, alapértelmezett felhasználó ID 1
 
-        // Hibakezelés
         if (empty($date)) {
             $hibak[] = "A dátum megadása kötelező!";
         }
@@ -73,7 +75,7 @@
                 echo "Sikeres adatbevitel!";
             } catch (Exception $e) {
                 // Hiba esetén visszavonjuk a tranzakciót
-                mysqli_roll_back($conn);
+                //mysqli_roll_back($conn);
                 echo "Hiba történt: " . $e->getMessage();
             }
         } else {
@@ -85,6 +87,7 @@
             $kimenet .= "</ul>";
         }
     }
+
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -102,9 +105,7 @@
             
             <p><label for="date">Dátum:</label></p>
             <input type="date" name="date" id="date"   min="2000-01-01"  required>
-            
-            <p><label for="consumed_quantity">Elfogyasztott mennyiség:</label></p>
-            <input type="number" name="consumed_quantity" min="0" id="consumed_quantity" step="0.01" required>
+
             
             <p><label for="consumption_type">Fogyasztás típusa:</label></p>
             <select name="consumption_type" id="consumption_type" required>
@@ -112,10 +113,10 @@
                 <option value="gaz">Gáz</option>
                 <option value="viz">Víz</option>
             </select>
-            
-            <p><label for="waste_type">Hulladéktípus mennyiség:</label></p>
-            <input type="number" name="waste_type" min="0" id="quantity" step="0.01" required>
-            
+                        
+            <p><label for="consumed_quantity">Elfogyasztott mennyiség:</label></p>
+            <input type="number" name="consumed_quantity" min="0" id="consumed_quantity" step="0.01" required>
+
             <select name="waste_type" id="waste_type" required>
                 <option value="szerves">Szerves</option>
                 <option value="muanyag">Műanyag</option>
@@ -124,9 +125,13 @@
                 <option value="fem">Fém</option>
             </select>
             
+            <p><label for="waste_type">Hulladéktípus mennyiség:</label></p>
+            <input type="number" name="waste_type" min="0" id="quantity" step="0.01" required>
+            
             <input type="submit" value="Rendben" name="rendben" id="rendben">
             <input type="reset" value="Mégsem">
-            <button><a href="../home.php">Vissza a fő oldalra</a></button>
+            <button><a href="adatlap.php">Tovább az adatokra</a></button>
+            <button><a href="../index.php">Vissza a fő oldalra</a></button>
         </form>
     </div>    
 </body>
